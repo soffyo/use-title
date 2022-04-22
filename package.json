@@ -1,5 +1,5 @@
 {
-  "name": "use-title",
+  "name": "@soffyo/use-title",
   "version": "1.0.0",
   "description": "React hook for document title management",
   "main": "index.js",
