@@ -1,6 +1,6 @@
 {
   "name": "@soffyo/use-title",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React hook for document title management",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
