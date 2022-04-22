@@ -3,6 +3,12 @@
 
 This hook is used for setting the current document title. It provies a way to add a prefix alongside every title through HTML `<meta>` tags in a SPA (single page app).
 
+## Installation
+
+```
+npm i --save @soffyo/use-title
+```
+
 ## Usage example
 
 `index.html`
