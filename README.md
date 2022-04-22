@@ -38,7 +38,7 @@ The useTitle hook doesn't return anything and accepts two arguments:
 
 ```typescript
 title: string
-options: { prefix: boolean }
+options?: { prefix: boolean }
 ```
 
 + **title**: *Non-Optional* - the title you want to use for the actual page when the component is rendered.
