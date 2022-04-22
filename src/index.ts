@@ -1,6 +1,6 @@
 import { useEffect, useCallback } from "react"
 
-export function useTitle(title: string, options: { prefix: boolean }): void
+export function useTitle(title: string, options?: { prefix: boolean }): void
 
 export function useTitle(title: string, options = { prefix: true }) {
     const getMainTitle: () => string|boolean = useCallback(() => {
