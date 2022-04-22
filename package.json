@@ -1,0 +1,42 @@
+{
+  "name": "use-title",
+  "version": "1.0.0",
+  "description": "React hook for document title management",
+  "main": "index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "README.md",
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "version": "git add .",
+    "postversion": "git push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soffyo/use-title.git"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "use-title",
+    "title",
+    "document.title"
+  ],
+  "author": "soffyo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soffyo/use-title/issues"
+  },
+  "homepage": "https://github.com/soffyo/use-title#readme",
+  "devDependencies": {
+    "@types/react": "^18.0.6",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "react": "^18.0.0"
+  }
+}
