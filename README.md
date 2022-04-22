@@ -1,7 +1,7 @@
 # use-title
 >React hook for managing the document title
 
-This hook is used for setting the current document title. It provies a way to add a prefix alongside every title through HTML `<meta>` tags in a SPA (single page app).
+This hook is used for setting the current document title. It provies a way to add a prefix alongside every title through HTML `<meta>` tags in a SPA (Single Page App).
 
 ## Installation
 
