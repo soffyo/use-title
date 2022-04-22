@@ -22,15 +22,21 @@ export function useTitle(title: string, options = { prefix: true }) {
 
         const mainTitle = getMainTitle()
 
-        if (title != prev) {
-            if (mainTitle) {
-                if (options.prefix) {
-                    document.title = `${title} - ${mainTitle}`
+        if (title) {
+            if (title != prev) {
+                if (mainTitle) {
+                    if (options.prefix) {
+                        document.title = `${title} - ${mainTitle}`
+                    } else {
+                        document.title = title
+                    }
                 } else {
                     document.title = title
                 }
-            } else {
-                document.title = title
+            }
+        } else {
+            if (mainTitle && typeof mainTitle == "string") {
+                document.title = mainTitle
             }
         }
 

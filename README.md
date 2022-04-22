@@ -43,12 +43,14 @@ The prefix functionality is provided via setting a `<meta>` tag into the HTML wh
 The useTitle hook doesn't return anything and accepts two arguments:
 
 ```typescript
-title: string
+title?: string
 options?: { prefix: boolean }
 ```
 
-+ **title**: *Non-Optional* - the title you want to use for the actual page when the component is rendered.
++ **title**: *Optional* - the title you want to use for the actual page when the component is rendered.
 + **options**: *Optional* - a config object. It only supports the *prefix* property for now which determines if the prefix set via `meta` HTML tags will be included in the page title. Defaults to `{ prefix: true }`
+
+When no argument is passed, `use-title-prefix` content value from the meta tag will be used as the page title.
 
 
 
