@@ -7,7 +7,7 @@ This hook is used for setting the current document title. It provies a way to ad
 
 `index.html`
 ```html
-<meta title="use-title-prefix" content="My custom prefix">
+<meta name="use-title-prefix" content="My custom prefix">
 ```
 
 `index.js`
@@ -30,7 +30,7 @@ My page title - My custom prefix
 
 ## Prefix
 
-The prefix functionality is provided via setting a `<meta>` tag into the HTML which loads your script. The HTML meta tag must have a `title="use-title-prefix"` attribute and the `content=""` attribute value determines your custom prefix. This prefix will be included in every title set via the `useTitle` hook, unless the `{ prefix: false }` option is passed. 
+The prefix functionality is provided via setting a `<meta>` tag into the HTML which loads your script. The HTML meta tag must have a `name="use-title-prefix"` attribute and the `content=""` attribute value determines your custom prefix. This prefix will be included in every title set via the `useTitle` hook, unless the `{ prefix: false }` option is passed. 
 
 ## API
 
