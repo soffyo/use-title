@@ -18,7 +18,7 @@ npm i --save @soffyo/use-title
 
 `index.js`
 ```javascript
-import { useTitle } from "use-title"
+import { useTitle } from "@soffyo/use-title"
 
 function Component() {
     useTitle("My page title")
