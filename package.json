@@ -10,6 +10,8 @@
   ],
   "scripts": {
     "build": "tsc",
+    "git": "git add . && git commit -m",
+    "postgit": "git push",
     "prepare": "npm run build",
     "version": "git add .",
     "postversion": "git push",

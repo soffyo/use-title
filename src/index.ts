@@ -36,7 +36,9 @@ export function useTitle(title: string, options = { prefix: true }) {
             }
         } else {
             if (prefix && typeof prefix == "string") {
-                document.title = prefix
+                if (prefix != prev) {
+                    document.title = prefix
+                }
             }
         }
 
