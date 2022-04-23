@@ -3,14 +3,14 @@ import { useEffect, useCallback } from "react"
 export function useTitle(title?: string, options?: { prefix: boolean }): void
 
 export function useTitle(title: string, options = { prefix: true }) {
-    const getMainTitle: () => string|boolean = useCallback(() => {
+    const getPrefix: () => string|boolean = useCallback(() => {
         const metaTag: HTMLMetaElement = document.querySelector("meta[name='use-title-prefix']")
 
         if (metaTag) {
-            const metaTitle = metaTag.getAttribute("content")
+            const prefix = metaTag.getAttribute("content")
 
-            if (metaTitle) {
-                return metaTitle
+            if (prefix) {
+                return prefix
             }
         }
 
@@ -20,13 +20,13 @@ export function useTitle(title: string, options = { prefix: true }) {
     useEffect(() => {
         const prev = document.title
 
-        const mainTitle = getMainTitle()
+        const prefix = getPrefix()
 
         if (title) {
             if (title != prev) {
-                if (mainTitle) {
+                if (prefix) {
                     if (options.prefix) {
-                        document.title = `${title} - ${mainTitle}`
+                        document.title = `${title} - ${prefix}`
                     } else {
                         document.title = title
                     }
@@ -35,13 +35,13 @@ export function useTitle(title: string, options = { prefix: true }) {
                 }
             }
         } else {
-            if (mainTitle && typeof mainTitle == "string") {
-                document.title = mainTitle
+            if (prefix && typeof prefix == "string") {
+                document.title = prefix
             }
         }
 
         return () => {
             document.title = prev
         }
-    }, [title, options.prefix, getMainTitle])
+    }, [title, options.prefix, getPrefix])
 }
